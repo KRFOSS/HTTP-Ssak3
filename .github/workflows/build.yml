@@ -15,15 +15,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.13t'
 
       - name: Install UPX
         run: |
-          sudo apt-get update
-          sudo apt-get install -y upx
+          sudo apt update -y
+          sudo apt install -y upx
 
       - name: Install uv
-        run: pip install uv
+        uses: astral-sh/setup-uv@v6
 
       - name: Install dependencies with uv
         run: uv sync --frozen --no-cache
