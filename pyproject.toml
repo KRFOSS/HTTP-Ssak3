@@ -1,0 +1,15 @@
+[project]
+name = "HTTP-Ssak3"
+version = "1.2.3"
+description = "HTTP File Server Bulk Downloader"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "aiohttp>=3.12.14",
+    "bs4>=0.0.2",
+    "lxml>=6.0.0",
+    "orjson>=3.10.18",
+    "pyinstaller>=6.14.2",
+    "typer>=0.16.0",
+]
