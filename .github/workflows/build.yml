@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-release:
-    runs-on: rokfoss1
+    runs-on: self-hosted
 
     steps:
       - name: Checkout repository
