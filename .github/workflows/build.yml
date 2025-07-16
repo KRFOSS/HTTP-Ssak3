@@ -1,8 +1,8 @@
-name: Python Binary Build and Release
+name: Binary Build and Release
 
 on:
   push:
-    branches: [ "main", "latest" ]
+    branches: [ "main" ]
 
 jobs:
   build-and-release:
